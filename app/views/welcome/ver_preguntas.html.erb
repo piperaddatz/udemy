@@ -1,0 +1,56 @@
+<h1> viene el famoso form </h1>
+
+
+<div class="container">
+
+	<br>
+<div class="row">
+	<div class="col-md-6">
+		
+
+		<table class="table table-striped">
+ 			<tr>
+ 			    <th>Tema:</th>
+   				<th>Sub Tema:</th>
+   				<th>Pregunta:</th>
+   				<th>Respuesta:</th>
+
+			</tr>
+
+				
+
+			
+			<% @questions.each do |pregunta| %>
+			
+		  <tr>
+			
+			
+			<td><%= pregunta.subtopic.name if pregunta.subtopic  %></td>
+        	<td><%= pregunta.content  %></td>
+        	<td><%= pregunta.answer.content if pregunta.answer %></td>	
+        	
+        	  
+			
+			</tr>
+			 
+			<% end %> 
+			
+   
+			
+			
+   			
+   
+				
+            
+			
+			</table>
+		</div>
+	</div>
+
+
+	
+
+
+   
+</div>
+

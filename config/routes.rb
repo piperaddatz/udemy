@@ -1,9 +1,20 @@
 Rails.application.routes.draw do
+  resources :notes
+  resources :topics
+  resources :subtopics
+  resources :answers
+  resources :questions
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
    root 'welcome#home'
+
+   ##################### Ingresar Preguntas
+   get 'welcome/ingresar_preguntas', to: 'welcome#ingresar_preguntas'
+   get 'welcome/ver_preguntas', to: 'welcome#ver_preguntas'
+
+   post '/add_question' => 'welcome#ingresar_preguntas'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

@@ -1,0 +1,7 @@
+class Topic < ActiveRecord::Base
+
+	#realtions
+	belongs_to :note
+	has_many :subtopic , dependent: :destroy
+
+end

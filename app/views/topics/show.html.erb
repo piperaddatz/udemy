@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @topic.name %>
+</p>
+
+<p>
+  <strong>Note:</strong>
+  <%= @topic.note_id %>
+</p>
+
+<p>
+  <strong>Sort:</strong>
+  <%= @topic.sort %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @topic.price %>
+</p>
+
+<%= link_to 'Edit', edit_topic_path(@topic) %> |
+<%= link_to 'Back', topics_path %>

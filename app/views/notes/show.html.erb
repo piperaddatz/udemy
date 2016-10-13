@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @note.name %>
+</p>
+
+<p>
+  <strong>Is pay:</strong>
+  <%= @note.is_pay %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @note.price %>
+</p>
+
+<p>
+  <strong>Teacher:</strong>
+  <%= @note.teacher %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @note.description %>
+</p>
+
+<p>
+  <strong>Is video:</strong>
+  <%= @note.is_video %>
+</p>
+
+<p>
+  <strong>Preview:</strong>
+  <%= @note.preview %>
+</p>
+
+<p>
+  <strong>Published:</strong>
+  <%= @note.published %>
+</p>
+
+<%= link_to 'Edit', edit_note_path(@note) %> |
+<%= link_to 'Back', notes_path %>
