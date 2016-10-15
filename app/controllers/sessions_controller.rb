@@ -20,7 +20,7 @@ class SessionsController < ApplicationController
   def destroy
     session[:user_id] = nil
     flash[:success] = "Haz cerrado sesion"
-    redirect_to notes_path
+    redirect_to root_path
   end
 
 end

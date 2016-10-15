@@ -1,0 +1,79 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.navbar-default {
+	
+	background-color: #CCCCCC;
+	border: #CCCCCC;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.hola {
+	
+	padding-top: 0px;
+    padding-left: 0px;
+
+    margin-top: -18px;
+    margin-left: -5px;
+
+}
+.letras-menu {
+	
+	
+}
+
+.navbar {
+	
+margin-bottom: 0px;
+
+}
+
+.homepage-descripcion {
+	
+    padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 50px;
+	padding-right: 30px;
+    text-align: justify;
+    font-size: 50%;
+    background-color: #176b73;
+
+}
+
+
+.color-letra {
+	
+	color: white;
+}
+.col{
+	padding-top: 70px;
+	padding-bottom: 80px;
+	padding-left: 50px;
+	
+}
+
+.footer-uno {
+	background-color: #353739;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	padding-left: 40px;
+	padding-right: 40px;
+	margin-right: 0px;
+}
+
+.footer-words {
+	color: #BAAEAE;
+	margin-left: 60px;
+	margin-bottom: 20px;
+	 letter-spacing: 3px;
+	 font-family:'Whitney HTF Book';
+}
+.footer-tres {
+	color: #BAAEAE;
+	margin-left: 60px;
+	margin-bottom: 20px;
+	 letter-spacing: 0px;
+	 font-family:'Whitney HTF Book';
+}
+
