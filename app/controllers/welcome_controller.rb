@@ -13,7 +13,7 @@ class WelcomeController < ApplicationController
  def ingresar_preguntas
     
     @question = Question.new
-     @answer = Answer.new
+    @answer = Answer.new
 
  end	
 
