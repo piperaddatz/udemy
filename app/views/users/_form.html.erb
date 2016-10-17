@@ -1,4 +1,4 @@
-<%= form_for(@user) do |f| %>
+<%= form_for(@user, :html => {multipart: true}) do |f| %>
   <% if @user.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@user.errors.count, "error") %> prohibited this answer from being saved:</h2>
@@ -24,6 +24,12 @@
 <div class="field">
     <%= f.label :password %><br>
     <%= f.password_field :password, placeholder: "Ingresa clave" %>
+  </div>
+
+
+  <div class="field">
+    <%= f.label :imagen %><br>
+    <%= f.file_field :avatar, placeholder: "Ingresa Imagen" %>
   </div>
 
 

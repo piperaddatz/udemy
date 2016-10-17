@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+	source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -14,6 +14,9 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem "rails-erd"
 gem 'carrierwave'
+gem "fog-aws"
+gem "fog"
+gem "figaro"
 
 gem 'bcrypt' , '~> 3.1.7'
 # See https://github.com/rails/execjs#readme for more supported runtimes

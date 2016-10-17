@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161013171651) do
+ActiveRecord::Schema.define(version: 20161017152805) do
 
   create_table "answers", force: :cascade do |t|
     t.string   "content"
@@ -71,6 +71,7 @@ ActiveRecord::Schema.define(version: 20161013171651) do
     t.boolean  "admin"
     t.string   "avatar_image"
     t.string   "password_digest"
+    t.string   "avatar"
   end
 
 end
