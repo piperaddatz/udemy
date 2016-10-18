@@ -28,7 +28,7 @@ def update
      @user = User.find(params[:id])
      if @user.update(user_params)
       flash[:success] = "se edito correctamente"
-      redirect_to users_path
+      redirect_to notes_path
 
     else
       render 'edit'
