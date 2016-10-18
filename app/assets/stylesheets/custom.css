@@ -25,5 +25,9 @@
 .nav>li>a>img {
   height: 40px;
   padding-right: 8px;
-  margin-top: -12px;
+  vertical-align: middle;
+}
+
+.dropdown {
+	margin-top: -8px;
 }
