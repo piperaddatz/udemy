@@ -17,6 +17,7 @@ gem 'carrierwave'
 gem "fog-aws"
 gem "fog"
 gem "figaro"
+gem "mini_magick"
 
 gem 'bcrypt' , '~> 3.1.7'
 # See https://github.com/rails/execjs#readme for more supported runtimes

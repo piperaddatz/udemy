@@ -1,0 +1,29 @@
+.avatar-resize {
+    height: 45px !important;
+    width: 45px !important;
+}
+
+.navbar-default {
+		background-color: #176b73;
+	    color: #ffffff;
+
+}
+
+.navbar,  {
+	
+	background-color: #176b73 ;
+	
+
+}
+.navbar-default .navbar-nav>li>a {
+    color: #ffffff;
+}
+
+.navbar-default .navbar-brand {
+    color: #ffffff;
+}
+.nav>li>a>img {
+  height: 40px;
+  padding-right: 8px;
+  margin-top: -12px;
+}
