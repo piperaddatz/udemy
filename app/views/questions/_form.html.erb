@@ -23,6 +23,8 @@
       </div>
     <% end %>
   </div>
+  <%= f.collection_select :subtopic_id, Subtopic.all, :id, :name %>
+  
   <div class="actions btn btn-info"">
     <%= f.submit %>
   </div>

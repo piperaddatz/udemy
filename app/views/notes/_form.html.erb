@@ -1,4 +1,4 @@
-<%= form_for(@note) do |f| %>
+<%= form_for(@note, :html => {multipart: true}) do |f| %>
   <% if @note.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@note.errors.count, "error") %> prohibited this note from being saved:</h2>
@@ -36,8 +36,8 @@
     <%= f.check_box :is_video %>
   </div>
   <div class="field">
-    <%= f.label :preview %><br>
-    <%= f.text_field :preview %>
+    <%= f.label :Imagen %><br>
+    <%= f.file_field :portada %>
   </div>
   <div class="field">
     <%= f.label :published %><br>

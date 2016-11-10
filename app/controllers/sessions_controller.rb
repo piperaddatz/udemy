@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
   if user && user.authenticate(params[:session][:password])
      session[:user_id] = user.id
      flash[:success] = "Te has logeado correctamente"
-     redirect_to notes_path
+     redirect_to courses_path
   else
     flash.now[:danger] = "Hay un error con su información"
     render 'new'

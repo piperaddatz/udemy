@@ -12,7 +12,7 @@ before_action :require_same_user, only: [:edit, :update, :show]
     if @user.save
       session[:user_id] = @user.id
       flash[:success] = "Welcome to the Appunte #{@user.username}"
-      redirect_to notes_path
+      redirect_to courses_path
     else
       render 'new'
     end
@@ -28,7 +28,7 @@ def update
      @user = User.find(params[:id])
      if @user.update(user_params)
       flash[:success] = "se edito correctamente"
-      redirect_to notes_path
+      redirect_to courses_path
 
     else
       render 'edit'

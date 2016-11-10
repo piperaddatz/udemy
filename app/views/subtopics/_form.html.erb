@@ -27,6 +27,7 @@
     <%= f.label :is_demo %><br>
     <%= f.check_box :is_demo %>
   </div>
+   <%= f.collection_select :topic_id, Topic.all, :id, :name %>
   <div class="actions">
     <%= f.submit %>
   </div>

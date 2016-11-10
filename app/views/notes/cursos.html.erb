@@ -1,0 +1,25 @@
+<div class="container">
+	<div class="col-md-12 text-center bold-whitney tittle-backline-black">
+		<h1>¿Qué quieres Estudiar?</h1>
+		<hr>
+	</div>
+</div>
+
+<br>
+<br>
+<br>
+
+<div class="container" id="appuntes-container">
+	<% @notes.each do |note| %>
+		<div class="col-md-3">
+		<%= link_to(note, class: "thumbnail")  do %>
+			<span class="caption normal-whitney">
+				<%= image_tag note.portada.url, class: "img-responsive" %>
+				<span class="note-name"><%= note.name.downcase  %></span>
+				<span class="light-close">Por <%= note.teacher %></span>
+				
+			 </span>
+			<% end %>
+		<% end %>
+		</div>			
+</div>

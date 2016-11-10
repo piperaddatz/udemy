@@ -1,44 +1,48 @@
-<p id="notice"><%= notice %></p>
+<div class="col-md-12 text-center bold-whitney tittle-backline-black">
+		<h2 align="center"> Contenido: </h2><br>
+		<hr>
+	</div>
 
-<p>
-  <strong>Name:</strong>
-  <%= @note.name %>
-</p>
 
-<p>
-  <strong>Is pay:</strong>
-  <%= @note.is_pay %>
-</p>
+<div class="row">
+	<div class="col-md-6">
+				
+				<%= @note.name  %><br>
+				<% @note.topics.each do |topic| %>
+					-<%= topic.name %><br>
+					<% topic.subtopics.each do |subtopic| %>
+						------<%= subtopic.name %><br>
+							<% subtopic.questions.each do |question| %>
+								----------<%= question.content %><br>
+								----------<%= question.answer.content if question.answer %><br>
+								
+							<% end %>
+					<% end %>
+				<% end %>
+	</div>
 
-<p>
-  <strong>Price:</strong>
-  <%= @note.price %>
-</p>
 
-<p>
-  <strong>Teacher:</strong>
-  <%= @note.teacher %>
-</p>
+	<div class="col-md-6">
 
-<p>
-  <strong>Description:</strong>
-  <%= @note.description %>
-</p>
+		 <h4> Comenta: </h4><br>
+		<%= link_to "Escribe una Reseña", new_note_review_path(@note), class: "btn btn-link" %>
+		<% @reviews.each do |review| %>
 
-<p>
-  <strong>Is video:</strong>
-  <%= @note.is_video %>
-</p>
+				<div class="star-rating" data-score= <%= review.rating %>s></div>
+				<p><%= review.comment %></p>
 
-<p>
-  <strong>Preview:</strong>
-  <%= @note.preview %>
-</p>
+		<% end %>
+	
+</div>	
+</div>
+</div>	
 
-<p>
-  <strong>Published:</strong>
-  <%= @note.published %>
-</p>
-
-<%= link_to 'Edit', edit_note_path(@note) %> |
-<%= link_to 'Back', notes_path %>
+<script>
+$('.star-rating').raty({
+	path: 'https://s3.amazonaws.com/fotospipe/stars',
+	readOnly: true,
+	score: function() {
+		return $(this).attr('data-score');
+	}
+});
+</script>

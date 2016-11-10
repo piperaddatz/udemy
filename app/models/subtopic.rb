@@ -2,7 +2,7 @@ class Subtopic < ActiveRecord::Base
 
     #relations
 	belongs_to :topic
-	has_many :question , dependent: :destroy
+	has_many :questions , dependent: :destroy
 
 
 end

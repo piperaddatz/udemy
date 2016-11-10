@@ -4,14 +4,14 @@
 }
 
 .navbar-default {
-		background-color: #176b73;
-	    color: #ffffff;
+		background-color: #176b73 !important;
+	    color: #ffffff !important;
 
 }
 
 .navbar,  {
 	
-	background-color: #176b73 ;
+	background-color: #176b73 !important;
 	
 
 }
@@ -26,8 +26,42 @@
   height: 40px;
   padding-right: 8px;
   vertical-align: middle;
+  border-radius: 50%;
 }
 
 .dropdown {
 	margin-top: -8px;
 }
+#nuevo-usuario {
+padding-top: 15px;
+padding-bottom: 45px;
+
+}
+#loglog {
+padding-top: 15px;
+padding-bottom: 110px;
+
+}
+
+#logo-signup {
+float: left;
+}
+#logo-login {
+margin-top: -60px;
+
+}
+
+/*########################   PAGINA CURSOS  #############################  */
+
+#appuntes-container .thumbnail{
+     padding: 0px;
+    color: black;
+    border-radius: 0px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.2);
+}
+
+
+
+

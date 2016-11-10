@@ -10,6 +10,7 @@ class NotesController < ApplicationController
   # GET /notes/1
   # GET /notes/1.json
   def show
+    @reviews = Review.where(note_id: @note.id)
   end
 
   # GET /notes/new
@@ -20,6 +21,13 @@ class NotesController < ApplicationController
   # GET /notes/1/edit
   def edit
   end
+
+# GET /notes/1/edit
+  def cursos
+    @notes = Note.where(published: true)
+  end
+
+
 
   # POST /notes
   # POST /notes.json
@@ -69,6 +77,6 @@ class NotesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def note_params
-      params.require(:note).permit(:name, :is_pay, :price, :teacher, :description, :is_video, :preview, :published)
+      params.require(:note).permit(:name, :is_pay, :price, :teacher, :description, :is_video, :preview, :published, :portada)
     end
 end

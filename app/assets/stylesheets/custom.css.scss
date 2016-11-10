@@ -1,7 +1,70 @@
-
-
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+
+.avatar-resize {
+    height: 45px !important;
+    width: 45px !important;
+}
+
+.navbar-default {
+		background-color: #176b73 !important;
+	    color: #ffffff !important;
+
+}
+
+.navbar,  {
+	
+	background-color: #176b73 !important;
+	
+
+}
+.navbar-default .navbar-nav>li>a {
+    color: #ffffff;
+}
+
+.navbar-default .navbar-brand {
+    color: #ffffff;
+}
+.nav>li>a>img {
+  height: 40px;
+  padding-right: 8px;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+.dropdown {
+	margin-top: -8px;
+}
+#nuevo-usuario {
+padding-top: 15px;
+padding-bottom: 45px;
+
+}
+#loglog {
+padding-top: 15px;
+padding-bottom: 110px;
+
+}
+
+#logo-signup {
+float: left;
+}
+#logo-login {
+margin-top: -60px;
+
+}
+
+/*########################   PAGINA CURSOS  #############################  */
+
+#appuntes-container .thumbnail{
+     padding: 0px;
+    color: black;
+    border-radius: 0px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.2);
+}
 
 
 

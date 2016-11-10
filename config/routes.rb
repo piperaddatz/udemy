@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  resources :notes
+  
+  resources :notes do 
+      resources :reviews
+  end  
   resources :topics
   resources :subtopics
   resources :answers
@@ -9,8 +12,9 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
+  
+  
    root 'welcome#home'
-
    ##################### Ingresar Preguntas
    get 'welcome/ingresar_preguntas', to: 'welcome#ingresar_preguntas'
    get 'welcome/ver_preguntas', to: 'welcome#ver_preguntas'
@@ -22,6 +26,10 @@ Rails.application.routes.draw do
   get 'login', to: 'sessions#new' 
   post 'login', to: 'sessions#create'
   delete 'logout', to: 'sessions#destroy'
+
+  # Pagina principal de cursos
+  get 'courses', to: 'notes#cursos'
+
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
